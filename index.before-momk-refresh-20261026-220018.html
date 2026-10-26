@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#FFF9F4" />
+  <title>مومك | Momk — رحلة تبدأ بفكرة</title>
+  <meta name="description" content="عرض تقديمي تفاعلي لمشروع مومك: رحلة تبدأ بفكرة، وتكبر بالاهتمام." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+</head>
+<body class="is-opening">
+
+  <div class="momk-presentation" id="presentation">
+
+    <!-- ============================================================
+         SLIDE 01 — The opening: a door into the Momk world
+         ============================================================ -->
+    <section class="slide slide--opening active" id="slide-1" data-scene="opening" aria-label="الشريحة الأولى: افتتاحية مومك">
+      <div class="opening-stage">
+
+        <!-- ---------- Left: dreamlike architectural scene ---------- -->
+        <div class="art-panel">
+          <div class="art-halo" aria-hidden="true"></div>
+          <div class="art-beam" aria-hidden="true"></div>
+          <div class="art-grain" aria-hidden="true"></div>
+
+          <div class="floor" aria-hidden="true">
+            <span class="floor-streak floor-streak--1"></span>
+            <span class="floor-streak floor-streak--2"></span>
+            <span class="floor-streak floor-streak--3"></span>
+            <span class="floor-streak floor-streak--4"></span>
+          </div>
+
+          <div class="door-shadow" aria-hidden="true"></div>
+
+          <div class="door-stage">
+            <div class="door-arch">
+              <div class="door-stone" aria-hidden="true"></div>
+
+              <div class="door-opening">
+                <!-- The little world behind the door -->
+                <svg class="door-scene" viewBox="0 0 320 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+                  <defs>
+                    <linearGradient id="doorSky" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#E8BFC9" />
+                      <stop offset=".28" stop-color="#F1CFC9" />
+                      <stop offset=".55" stop-color="#F8E0CF" />
+                      <stop offset=".78" stop-color="#FBEBDD" />
+                      <stop offset="1" stop-color="#FFF8EE" />
+                    </linearGradient>
+                    <radialGradient id="doorSun" cx="50%" cy="50%" r="50%">
+                      <stop offset="0" stop-color="#FFFDF8" stop-opacity="1" />
+                      <stop offset=".32" stop-color="#FFEACB" stop-opacity=".96" />
+                      <stop offset=".7" stop-color="#F7CFB8" stop-opacity=".35" />
+                      <stop offset="1" stop-color="#F5C9B5" stop-opacity="0" />
+                    </radialGradient>
+                    <linearGradient id="doorMountainBack" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#DCB6BA" />
+                      <stop offset="1" stop-color="#C99BA3" />
+                    </linearGradient>
+                    <linearGradient id="doorMountainMid" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#CFA0A4" />
+                      <stop offset="1" stop-color="#BA858F" />
+                    </linearGradient>
+                    <linearGradient id="doorHills" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#D8B29D" />
+                      <stop offset="1" stop-color="#C08F7B" />
+                    </linearGradient>
+                    <linearGradient id="doorHillsFront" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#E3C3AD" />
+                      <stop offset="1" stop-color="#D1A58C" />
+                    </linearGradient>
+                    <linearGradient id="doorPath" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#FFF7E5" />
+                      <stop offset=".55" stop-color="#FFE6C2" />
+                      <stop offset="1" stop-color="#F7C9A7" />
+                    </linearGradient>
+                    <linearGradient id="doorShaft" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#FFF9E9" stop-opacity=".75" />
+                      <stop offset="1" stop-color="#FFF9E9" stop-opacity="0" />
+                    </linearGradient>
+                    <filter id="doorSoft" x="-40%" y="-40%" width="180%" height="180%">
+                      <feGaussianBlur stdDeviation="8" />
+                    </filter>
+                    <filter id="doorGlow" x="-80%" y="-80%" width="260%" height="260%">
+                      <feGaussianBlur stdDeviation="3.4" />
+                    </filter>
+                  </defs>
+
+                  <rect width="320" height="640" fill="url(#doorSky)" />
+                  <ellipse cx="164" cy="292" rx="108" ry="94" fill="url(#doorSun)" opacity=".92" />
+                  <circle cx="164" cy="286" r="25" fill="#FFF8E7" opacity=".98" />
+
+                  <!-- light shaft through the door -->
+                  <path d="M164 304 L94 640 L246 640 Z" fill="url(#doorShaft)" opacity=".32" />
+
+                  <!-- mountains -->
+                  <path d="M-24 366 L26 326 L68 350 L104 306 L140 338 L176 300 L214 338 L252 310 L292 342 L344 318 L344 440 L-24 440 Z" fill="url(#doorMountainBack)" opacity=".78" />
+                  <path d="M-24 396 C22 366 58 380 92 350 C128 318 154 362 190 338 C228 312 262 356 300 336 C320 326 336 336 344 342 L344 480 L-24 480 Z" fill="url(#doorMountainMid)" opacity=".86" />
+                  <path d="M-24 440 C26 416 62 428 100 404 C140 378 170 422 208 400 C248 378 282 420 316 404 C330 398 340 402 344 406 L344 520 L-24 520 Z" fill="url(#doorHills)" opacity=".92" />
+
+                  <!-- foreground hills -->
+                  <path d="M-24 494 C34 464 80 486 124 464 C168 442 204 484 244 466 C282 448 318 474 344 462 L344 660 L-24 660 Z" fill="url(#doorHillsFront)" />
+                  <path d="M-24 546 C38 516 86 542 132 520 C176 498 214 536 258 518 C296 502 326 522 344 516 L344 660 L-24 660 Z" fill="#C99B82" opacity=".72" />
+
+                  <!-- the glowing path -->
+                  <path d="M150 660 C130 608 188 574 166 534 C146 498 192 470 174 438 C162 416 170 402 180 388" fill="none" stroke="url(#doorPath)" stroke-width="30" stroke-linecap="round" opacity=".55" filter="url(#doorSoft)" />
+                  <path d="M150 660 C130 608 188 574 166 534 C146 498 192 470 174 438 C162 416 170 402 180 388" fill="none" stroke="url(#doorPath)" stroke-width="15" stroke-linecap="round" opacity=".96" />
+                  <path d="M150 660 C130 608 188 574 166 534 C146 498 192 470 174 438 C162 416 170 402 180 388" fill="none" stroke="#FFFDF5" stroke-width="4" stroke-linecap="round" opacity=".8" />
+
+                  <!-- path reflections -->
+                  <ellipse cx="162" cy="594" rx="47" ry="4.5" fill="#FFF5DE" opacity=".45" filter="url(#doorGlow)" />
+                  <ellipse cx="166" cy="548" rx="31" ry="3" fill="#FFF5DE" opacity=".4" filter="url(#doorGlow)" />
+                  <ellipse cx="175" cy="490" rx="18" ry="2" fill="#FFF8E8" opacity=".45" filter="url(#doorGlow)" />
+                  <ellipse cx="178" cy="444" rx="9" ry="1.6" fill="#FFF8E8" opacity=".5" filter="url(#doorGlow)" />
+
+                  <!-- tiny glints -->
+                  <g fill="#FFF8E6">
+                    <circle cx="58" cy="380" r="1.3" opacity=".8" />
+                    <circle cx="250" cy="354" r="1.1" opacity=".7" />
+                    <circle cx="92" cy="452" r="1" opacity=".55" />
+                    <circle cx="230" cy="512" r="1.2" opacity=".6" />
+                    <circle cx="120" cy="578" r="1" opacity=".5" />
+                    <circle cx="206" cy="606" r="1.4" opacity=".55" />
+                  </g>
+                </svg>
+
+                <div class="scene-vignette" aria-hidden="true"></div>
+
+                <div class="door-quote">
+                  <span>كل فكرة</span>
+                  <span>تستحق أن تُصنع</span>
+                  <span>بإحساس.</span>
+                </div>
+
+                <!-- Partially open leaf, hinged on the right -->
+                <div class="door-leaf" aria-hidden="true">
+                  <span class="leaf-panel leaf-panel--top"></span>
+                  <span class="leaf-panel leaf-panel--bottom"></span>
+                  <span class="leaf-glow"></span>
+                  <span class="leaf-handle"></span>
+                </div>
+              </div>
+
+              <div class="door-arch-shine" aria-hidden="true"></div>
+            </div>
+            <div class="door-sill" aria-hidden="true"></div>
+          </div>
+
+          <div class="door-reflection" aria-hidden="true"></div>
+
+          <!-- A small, delicate flowering branch -->
+          <svg class="branch" viewBox="0 0 230 245" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="branchStem" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stop-color="#A97D7D" />
+                <stop offset=".55" stop-color="#BE9290" />
+                <stop offset="1" stop-color="#D0A9A1" />
+              </linearGradient>
+              <radialGradient id="petalFill" cx="38%" cy="30%" r="75%">
+                <stop offset="0" stop-color="#FBE8E8" />
+                <stop offset=".55" stop-color="#EBC1C7" />
+                <stop offset="1" stop-color="#D9A5B0" />
+              </radialGradient>
+              <g id="fivePetal">
+                <ellipse cx="0" cy="-7.2" rx="4.2" ry="6.2" fill="url(#petalFill)" />
+                <ellipse cx="6.8" cy="-2.2" rx="4.2" ry="6.2" transform="rotate(72 6.8 -2.2)" fill="url(#petalFill)" />
+                <ellipse cx="4.2" cy="5.9" rx="4.2" ry="6.2" transform="rotate(144 4.2 5.9)" fill="url(#petalFill)" />
+                <ellipse cx="-4.2" cy="5.9" rx="4.2" ry="6.2" transform="rotate(216 -4.2 5.9)" fill="url(#petalFill)" />
+                <ellipse cx="-6.8" cy="-2.2" rx="4.2" ry="6.2" transform="rotate(288 -6.8 -2.2)" fill="url(#petalFill)" />
+                <circle cx="0" cy="0" r="2" fill="#F7DCC0" />
+              </g>
+            </defs>
+            <path d="M18 238 C42 202 56 172 82 144 C108 116 132 94 166 68 C184 54 198 40 210 22" fill="none" stroke="url(#branchStem)" stroke-width="2" stroke-linecap="round" />
+            <path d="M61 180 C78 168 96 161 116 157" fill="none" stroke="url(#branchStem)" stroke-width="1.4" stroke-linecap="round" />
+            <path d="M91 136 C80 120 76 106 77 92" fill="none" stroke="url(#branchStem)" stroke-width="1.2" stroke-linecap="round" />
+            <path d="M123 108 C138 98 154 94 170 94" fill="none" stroke="url(#branchStem)" stroke-width="1.2" stroke-linecap="round" />
+            <path d="M164 71 C158 55 160 42 168 28" fill="none" stroke="url(#branchStem)" stroke-width="1.1" stroke-linecap="round" />
+            <path d="M40 218 C52 226 64 228 76 224 C66 216 54 212 40 218 Z" fill="#B9A79B" opacity=".55" />
+            <path d="M84 154 C94 146 106 144 116 148 C108 158 96 162 84 154 Z" fill="#B9A79B" opacity=".5" />
+            <path d="M145 86 C150 75 161 69 172 72 C168 83 158 89 145 86 Z" fill="#B9A79B" opacity=".45" />
+            <use href="#fivePetal" transform="translate(116 157) scale(.82) rotate(-14)" />
+            <use href="#fivePetal" transform="translate(77 92) scale(.72) rotate(21)" />
+            <use href="#fivePetal" transform="translate(170 94) scale(.66) rotate(-28)" />
+            <use href="#fivePetal" transform="translate(168 28) scale(.58) rotate(10)" />
+            <use href="#fivePetal" transform="translate(196 44) scale(.5) rotate(-8)" />
+            <use href="#fivePetal" transform="translate(100 190) scale(.46) rotate(16)" opacity=".9" />
+            <circle cx="198" cy="60" r="2" fill="#E9C0C5" opacity=".7" />
+            <circle cx="64" cy="132" r="1.5" fill="#E9C0C5" opacity=".65" />
+          </svg>
+
+          <div class="petals" aria-hidden="true">
+            <span style="--x: 12%; --delay: -3s; --dur: 19s; --drift: 26px; --scale: .9;"></span>
+            <span style="--x: 28%; --delay: -9s; --dur: 23s; --drift: -18px; --scale: .65;"></span>
+            <span style="--x: 43%; --delay: -15s; --dur: 21s; --drift: 31px; --scale: .8;"></span>
+            <span style="--x: 59%; --delay: -6s; --dur: 25s; --drift: -24px; --scale: .55;"></span>
+            <span style="--x: 72%; --delay: -18s; --dur: 20s; --drift: 16px; --scale: .7;"></span>
+            <span style="--x: 86%; --delay: -11s; --dur: 24s; --drift: -28px; --scale: .5;"></span>
+          </div>
+
+          <div class="motes" aria-hidden="true">
+            <span style="--x: 9%; --y: 22%; --dur: 13s; --delay: -2s; --size: 3px;"></span>
+            <span style="--x: 18%; --y: 54%; --dur: 17s; --delay: -7s; --size: 4px;"></span>
+            <span style="--x: 31%; --y: 14%; --dur: 15s; --delay: -4s; --size: 2px;"></span>
+            <span style="--x: 40%; --y: 68%; --dur: 19s; --delay: -11s; --size: 3px;"></span>
+            <span style="--x: 55%; --y: 30%; --dur: 16s; --delay: -9s; --size: 2px;"></span>
+            <span style="--x: 67%; --y: 58%; --dur: 14s; --delay: -5s; --size: 4px;"></span>
+            <span style="--x: 79%; --y: 20%; --dur: 18s; --delay: -13s; --size: 2.5px;"></span>
+            <span style="--x: 88%; --y: 44%; --dur: 15s; --delay: -8s; --size: 3px;"></span>
+            <span style="--x: 48%; --y: 84%; --dur: 20s; --delay: -15s; --size: 2px;"></span>
+          </div>
+        </div>
+
+        <!-- ---------- Right: the Momk welcome ---------- -->
+        <div class="content-panel">
+          <div class="panel-glow" aria-hidden="true"></div>
+
+          <header class="brand-lockup intro intro--brand">
+            <span class="brand-text">
+              <span class="brand-name">Momk</span>
+              <span class="brand-ar">مومك</span>
+            </span>
+            <svg class="brand-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 2.8l1.8 7.4L21.2 12l-7.4 1.8L12 21.2l-1.8-7.4L2.8 12l7.4-1.8z" />
+            </svg>
+          </header>
+
+          <div class="hero">
+            <p class="hero-eyebrow intro intro--eyebrow">مرحبًا بكِ في رحلة</p>
+            <h1 class="hero-wordmark intro intro--wordmark">Momk</h1>
+
+            <div class="hero-arabic intro intro--arabic">
+              <span class="arabic-rule" aria-hidden="true"></span>
+              <span class="arabic-word">مومك</span>
+              <span class="arabic-rule" aria-hidden="true"></span>
+              <svg class="arabic-star" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 3.2l1.6 6.5 6.5 1.6-6.5 1.6-1.6 6.5-1.6-6.5-6.5-1.6 6.5-1.6z" />
+              </svg>
+            </div>
+
+            <p class="hero-main intro intro--main">
+              <span>لأن كل بداية جميلة،</span>
+              <span>تستحق عناية تشبهها.</span>
+            </p>
+            <p class="hero-sub intro intro--sub">رحلة تبدأ بفكرة، وتكبر بالاهتمام.</p>
+
+            <div class="heart intro intro--heart" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <defs>
+                  <linearGradient id="heartStroke" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#D9A6AF" />
+                    <stop offset=".55" stop-color="#B77D88" />
+                    <stop offset="1" stop-color="#925F69" />
+                  </linearGradient>
+                </defs>
+                <path d="M12 20.4S4.5 15.8 4.5 10.4A4.4 4.4 0 0 1 12 7.2a4.4 4.4 0 0 1 7.5 3.2c0 5.4-7.5 10-7.5 10z" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="student-card intro intro--card" role="group" aria-label="بيانات الطالبة">
+            <div class="student-item">
+              <span class="student-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+              </span>
+              <span class="student-copy">
+                <span class="student-label">الطالبة</span>
+                <span class="student-value">لين عبدالرحمن هلال</span>
+              </span>
+            </div>
+
+            <div class="student-item">
+              <span class="student-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h4M7 13h7M17 10v4"/></svg>
+              </span>
+              <span class="student-copy">
+                <span class="student-label">الرقم الجامعي</span>
+                <span class="student-value student-value--number" dir="ltr">155640</span>
+              </span>
+            </div>
+
+            <div class="student-item student-item--subject">
+              <span class="student-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 5.6A2.6 2.6 0 0 1 5.6 3H12v18H5.6A2.6 2.6 0 0 1 3 18.4z"/><path d="M21 5.6A2.6 2.6 0 0 0 18.4 3H12v18h6.4a2.6 2.6 0 0 0 2.6-2.6z"/></svg>
+              </span>
+              <span class="student-copy">
+                <span class="student-label">المادة</span>
+                <span class="student-value">بناء ونشر المواقع بالذكاء الاصطناعي</span>
+              </span>
+            </div>
+
+            <div class="student-item">
+              <span class="student-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18h1.4a2 2 0 0 0 1.5-3.3 2 2 0 0 1 1.5-3.3h1.2A3.4 3.4 0 0 0 21 11 9 9 0 0 0 12 3z"/><circle cx="7.7" cy="10" r=".9"/><circle cx="10.1" cy="6.9" r=".9"/><circle cx="14" cy="6.9" r=".9"/><circle cx="16.6" cy="9.7" r=".9"/></svg>
+              </span>
+              <span class="student-copy">
+                <span class="student-label">التخصص</span>
+                <span class="student-value">التصميم والبرمجيات</span>
+              </span>
+            </div>
+          </div>
+
+          <nav class="opening-nav intro intro--nav" aria-label="التنقل بين شرائح العرض">
+            <div class="nav-count" aria-label="الشريحة الحالية">
+              <span class="count-current" id="openingCurrent">01</span>
+              <span class="count-sep">/</span>
+              <span class="count-total" data-total>12</span>
+            </div>
+
+            <span class="nav-rule" aria-hidden="true"></span>
+            <div class="nav-dots" id="openingDots"></div>
+
+            <button class="opening-cta" type="button" data-next-slide aria-label="اكتشفي الحكاية — الانتقال إلى الشريحة التالية">
+              <span class="cta-orb" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 4v15"/><path d="M6.5 13.5 12 19l5.5-5.5"/></svg>
+              </span>
+              <span class="cta-label">اكتشفي الحكاية</span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 02 — A story begins with a question
+         ============================================================ -->
+    <section class="slide" id="slide-2" data-scene="story-start" aria-label="الشريحة الثانية: بداية الحكاية">
+      <div class="scene-container">
+        <div class="question-section">
+          <p class="eyebrow">بداية الحكاية</p>
+          <h2 data-animate="fade-in-up">كل مشروع مميز يبدأ بسؤال.</h2>
+          <p class="lead">كيف نجعل رحلة الأمومة أكثر دفئًا وسهولة؟</p>
+        </div>
+        <div class="answer-section">
+          <h3 data-animate="slide-from-left">فكرة مومك</h3>
+          <p>منصة ذكية للأمومة تجمع المتجر وقوائم الهدايا والمساعد التسوق الذكي.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 03 — The problem
+         ============================================================ -->
+    <section class="slide" id="slide-3" data-scene="problem" aria-label="الشريحة الثالثة: المشكلة">
+      <div class="scene-container">
+        <div class="problem-section">
+          <p class="eyebrow">المشكلة</p>
+          <h2 data-animate="fade-in-up">من هنا بدأت الفكرة.</h2>
+          <p class="lead" data-animate="fade-in">تعقيد تجربة التسوق للأمومة وصعوبة العثور على منتجات مدروسة.</p>
+
+          <div class="problem-aspects">
+            <article class="aspect-card" data-animate="stagger-in">
+              <div class="aspect-icon">
+                <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/></svg>
+              </div>
+              <div>
+                <h3>احتياج حقيقي</h3>
+                <p>تسوق أمومة معقد</p>
+              </div>
+            </article>
+            <article class="aspect-card" data-animate="stagger-in">
+              <div class="aspect-icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
+              </div>
+              <div>
+                <h3>منصة موحدة</h3>
+                <p>غياب تجمع المتجر وقوائم الهدايا</p>
+              </div>
+            </article>
+            <article class="aspect-card" data-animate="stagger-in">
+              <div class="aspect-icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 10s1.5-2 4-2 4 2 4 2"/></svg>
+              </div>
+              <div>
+                <h3>واجهة عربية</h3>
+                <p>الحاجة لتجربة مستخدم ناعمة</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 04 — The solution
+         ============================================================ -->
+    <section class="slide" id="slide-4" data-scene="solution" aria-label="الشريحة الرابعة: الحل">
+      <div class="scene-container">
+        <div class="solution-section">
+          <p class="eyebrow">الحل</p>
+          <h2 data-animate="fade-in">الفكرة تتحول إلى تجربة.</h2>
+          <p class="lead" data-animate="fade-in">مومك تقدم حلاً متكاملاً يتمثل في منصة واحدة تجمع كل ما تحتاجه الأم.</p>
+          <ul class="solution-list" data-animate="stagger-in">
+            <li>متجر منتجات مصنفة بعناية</li>
+            <li>قوائم هدايا قابلة للتخصيص</li>
+            <li>مساعد تسوق ذكي</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 05 — Target audience
+         ============================================================ -->
+    <section class="slide" id="slide-5" data-scene="audience" aria-label="الشريحة الخامسة: الجمهور">
+      <div class="scene-container">
+        <p class="eyebrow">لمن صُمم مومك؟</p>
+        <h2 data-animate="bounce-in">لأن كل تجربة تبدأ بمن نهتم به.</h2>
+
+        <div class="audience-cards">
+          <article class="audience-card" data-animate="card-fade">
+            <div class="card-header">
+              <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/></svg>
+            </div>
+            <h3>الأمهات الجديدات</h3>
+            <p>منتجات ضرورية ورعاية خاصة للمرحلة الأولى</p>
+          </article>
+
+          <article class="audience-card" data-animate="card-fade">
+            <div class="card-header">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
+            </div>
+            <h3>الأمهات المتوقعات</h3>
+            <p>اكتشاف منتجات قبل الولادة وخطط التجهيز</p>
+          </article>
+
+          <article class="audience-card" data-animate="card-fade">
+            <div class="card-header">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 10s1.5-2 4-2 4 2 4 2"/></svg>
+            </div>
+            <h3>مقدمات الرعاية</h3>
+            <p>بحث عن هدايا عملية ومراعية للتفاصيل</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 06 — Services & features
+         ============================================================ -->
+    <section class="slide" id="slide-6" data-scene="services" aria-label="الشريحة السادسة: الخدمات والميزات">
+      <div class="scene-container">
+        <p class="eyebrow">الخدمات والميزات</p>
+        <h2 data-animate="fade-in">تفاصيل صغيرة، تصنع تجربة مختلفة.</h2>
+
+        <div class="features-grid">
+          <article class="feature-card" data-animate="card-grow">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3>أقسام منتجات مصنفة</h3>
+            <p>رعاية، رضاعة، ألعاب مصنفة بعناية</p>
+          </article>
+
+          <article class="feature-card" data-animate="card-grow">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 12v9H4v-9"/><path d="M2 7h20v5H2z"/><path d="M12 21V7"/><path d="M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 1 0 0-5C13 2 12 7 12 7z"/></svg>
+            </div>
+            <h3>قائمة هدايا قابلة للتخصيص</h3>
+            <p>مشاركة وتعديل بسهولة تامة</p>
+          </article>
+
+          <article class="feature-card" data-animate="card-grow">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.5 9 9 0 0 1-3.8-.8L3 21l1.8-5.7A8.5 8.5 0 1 1 21 11.5z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg>
+            </div>
+            <h3>مساعد تسوق ذكي</h3>
+            <p>يوجه المستخدمين بناءً على المرحلة والاحتياجات</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 07 — A tour inside the Momk interface
+         ============================================================ -->
+    <section class="slide" id="slide-7" data-scene="interface" aria-label="الشريحة السابعة: واجهة الموقع">
+      <div class="scene-container">
+        <p class="eyebrow">جولة داخل الواجهة</p>
+        <h2 data-animate="fade-in">جولة داخل واجهة مومك.</h2>
+        <p class="lead" data-animate="fade-in">تصميم واجهة مستخدم ناعمة، وتنظيم محتوى ذكي، وتنقل سلس بين الأقسام.</p>
+
+        <div class="mockup-gallery">
+          <article class="mockup-item" data-animate="zoom-in">
+            <div class="mockup-frame">
+              <div class="mockup-screen">
+                <header class="mockup-header">
+                  <div class="mockup-brand"><img src="assets/logo.png" alt="MOMIQ" /></div>
+                  <nav class="mockup-nav">
+                    <span class="nav-link">الرئيسية</span>
+                    <span class="nav-link">المتجر</span>
+                  </nav>
+                </header>
+                <section class="mockup-hero">
+                  <h1>لأن الحب يبدأ بتفاصيل صغيرة…</h1>
+                  <p>جمعنا لكِ كل ما يجعل رحلتكِ مع صغيركِ أكثر دفئًا وراحة</p>
+                </section>
+              </div>
+            </div>
+            <h4>الصفحة الرئيسية</h4>
+          </article>
+
+          <article class="mockup-item" data-animate="zoom-in">
+            <div class="mockup-frame">
+              <div class="mockup-screen">
+                <h2 class="kicker">تسوقي حسب التصنيف</h2>
+                <div class="mockup-categories">
+                  <span class="cat-link">مستلزمات المستشفى</span>
+                  <span class="cat-link">راحة الحامل</span>
+                  <span class="cat-link">رضاعة طبيعية</span>
+                </div>
+              </div>
+            </div>
+            <h4>تصنيفات المنتجات</h4>
+          </article>
+
+          <article class="mockup-item" data-animate="zoom-in">
+            <div class="mockup-frame">
+              <div class="mockup-screen">
+                <div class="mockup-product">
+                  <img src="assets/img/hero-mom.png" alt="منتج" />
+                  <span class="product-badge">⭐ مميز</span>
+                </div>
+              </div>
+            </div>
+            <h4>تفاصيل المنتج</h4>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 08 — UX and design decisions
+         ============================================================ -->
+    <section class="slide" id="slide-8" data-scene="ux" aria-label="الشريحة الثامنة: تجربة المستخدم">
+      <div class="scene-container">
+        <p class="eyebrow">التصميم والتجربة</p>
+        <h2 data-animate="fade-in">الجمال ليس في الشكل فقط، بل في التجربة.</h2>
+
+        <div class="ux-highlights">
+          <article class="ux-highlight" data-animate="fade-in">
+            <div class="highlight-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="8" cy="10" r="1"/><circle cx="12" cy="7.5" r="1"/><circle cx="16" cy="10" r="1"/><circle cx="12" cy="16" r="1"/></svg>
+            </div>
+            <div>
+              <h3>تناسق الألوان</h3>
+              <p>ألوان هادئة مدروسة: الوردي #E8C6D2 والكريمي #FFF9F4</p>
+            </div>
+          </article>
+
+          <article class="ux-highlight" data-animate="fade-in">
+            <div class="highlight-icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            </div>
+            <div>
+              <h3>تنظيم المحتوى</h3>
+              <p>تصنيفات واضحة ومنطقية للمنتجات</p>
+            </div>
+          </article>
+
+          <article class="ux-highlight" data-animate="fade-in">
+            <div class="highlight-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 3v9h9"/><path d="M16 3.5A9 9 0 0 1 20.5 8"/></svg>
+            </div>
+            <div>
+              <h3>سهولة الوصول</h3>
+              <p>عناصر ووظائف في متناول اليد</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 09 — Technologies
+         ============================================================ -->
+    <section class="slide" id="slide-9" data-scene="technologies" aria-label="الشريحة التاسعة: التقنيات">
+      <div class="scene-container">
+        <p class="eyebrow">التقنيات</p>
+        <h2 data-animate="fade-in">خلف كل تجربة جميلة، عمل تقني متقن.</h2>
+
+        <div class="tech-stack">
+          <article class="tech-item" data-animate="tech-grow">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 9l-3 3 3 3"/><path d="M16 9l3 3-3 3"/><path d="M13 5l-2 14"/></svg>
+            </div>
+            <div class="tech-details">
+              <h3>HTML5</h3>
+              <p>هيكل معرفي Semantic</p>
+            </div>
+          </article>
+
+          <article class="tech-item" data-animate="tech-grow">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M8.5 9.5c1-1.3 2.3-2 3.5-2s2.5.7 3.5 2"/><path d="M9 15h6"/></svg>
+            </div>
+            <div class="tech-details">
+              <h3>CSS3</h3>
+              <p>تدرجات لونية، تصميم متجاوب، وتنسيق دقيق</p>
+            </div>
+          </article>
+
+          <article class="tech-item" data-animate="tech-grow">
+            <div class="tech-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M13 2L4.5 13H11l-1 9L18.5 11H12z"/></svg>
+            </div>
+            <div class="tech-details">
+              <h3>JavaScript</h3>
+              <p>تفاعلات، localStorage، ووظائف ذكية</p>
+            </div>
+          </article>
+
+          <article class="tech-item" data-animate="tech-grow">
+            <div class="tech-icon tech-icon--type" aria-hidden="true">Aa</div>
+            <div class="tech-details">
+              <h3>تجوال</h3>
+              <p>خط عربي من Google Fonts</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 10 — What makes Momk special?
+         ============================================================ -->
+    <section class="slide" id="slide-10" data-scene="special" aria-label="الشريحة العاشرة: ما يميز مومك">
+      <div class="scene-container">
+        <p class="eyebrow">ما يميز مومك</p>
+        <h2 data-animate="fade-in">هوية لها حكاية.</h2>
+
+        <div class="special-vision">
+          <div class="vision-core">
+            <h3>تجربة متكاملة</h3>
+            <p>منصة تجمع المتجر وقوائم الهدايا والمساعد الذكي</p>
+          </div>
+
+          <div class="vision-elements">
+            <div class="element-item">
+              <h3>هوية بصرية</h3>
+              <p>ألوان ناعمة، خط تجوال، وتفاصيل مدروسة</p>
+            </div>
+            <div class="element-item">
+              <h3>تقنيات حديثة</h3>
+              <p>HTML, CSS, JavaScript بدون تعقيد</p>
+            </div>
+            <div class="element-item">
+              <h3>اهتمام بالتفاصيل</h3>
+              <p>كل عنصر له دور وهدف</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 11 — Future development
+         ============================================================ -->
+    <section class="slide" id="slide-11" data-scene="future" aria-label="الشريحة الحادية عشرة: التطوير المستقبلي">
+      <div class="scene-container">
+        <p class="eyebrow">التطوير المستقبلي</p>
+        <h2 data-animate="fade-in">والحكاية لا تنتهي هنا.</h2>
+
+        <div class="future-vision">
+          <div class="current-features">
+            <h3>الميزات الحالية</h3>
+            <ul>
+              <li>متجر منتجات مدروسة</li>
+              <li>قوائم هدايا قابلة للتخصيص</li>
+              <li>مساعد تسوق ذكي</li>
+            </ul>
+          </div>
+
+          <div class="future-ideas">
+            <h3>اقتراحات مستقبلية</h3>
+            <ul>
+              <li>قائمة رغبات سحابية</li>
+              <li>توصيات مخصصة بناءً على المرحلة</li>
+              <li>دعم لغات إضافية</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 12 — Conclusion
+         ============================================================ -->
+    <section class="slide slide--closing" id="slide-12" data-scene="conclusion" aria-label="الشريحة الثانية عشرة: الخاتمة">
+      <div class="scene-container">
+        <div class="closing-animation">
+          <p class="eyebrow">الخاتمة</p>
+          <h2 class="closing-title" data-animate="fade-in-up">كل بداية لها حكاية، وهذه حكايتنا.</h2>
+          <p class="closing-subtitle" data-animate="fade-in-up">مومك | Momk</p>
+          <p class="closing-message" data-animate="fade-in-up">شكرًا لوقتكم واهتمامكم.</p>
+        </div>
+
+        <div class="link-section" data-animate="slide-up">
+          <h3>الموقع الفعلي</h3>
+          <a href="https://github.com/username/momk" target="_blank" rel="noopener" class="link-button">استكشاف المشروع</a>
+        </div>
+
+        <div class="contact-info" data-animate="fade-in-up">
+          <p>يمكن التواصل عبر:</p>
+          <p>واتساب (يمكن ضبط الرقم من الإعدادات)</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Global navigation for slides 2–12 -->
+  <button class="nav-btn prev" type="button" data-prev-slide aria-label="الشريحة السابقة" title="السابقة">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <path d="M15 18l-6-6 6-6"/>
+    </svg>
+  </button>
+  <button class="nav-btn next" type="button" data-next-slide aria-label="الشريحة التالية" title="التالية">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <path d="M9 18l6-6-6-6"/>
+    </svg>
+  </button>
+
+  <div class="slide-counter" id="slideCounter" aria-live="polite">
+    <span id="currentSlideNumber">01</span>
+    <span class="counter-sep">/</span>
+    <span id="totalSlideNumber">12</span>
+  </div>
+
+  <div class="progress-bar" id="progressBar" role="progressbar" aria-label="تقدم العرض" aria-valuemin="0" aria-valuemax="100" aria-valuenow="8"></div>
+
+  <script src="slides.js"></script>
+</body>
+</html>
